@@ -1,0 +1,23 @@
+{
+  "name": "backend-api",
+  "version": "1.0.0",
+  "description": "Best server on the world",
+  "keywords": [
+    "Kartik"
+  ],
+  "homepage": "https://github.com/ItsKartik12/backend-api#readme",
+  "bugs": {
+    "url": "https://github.com/ItsKartik12/backend-api/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItsKartik12/backend-api.git"
+  },
+  "license": "ISC",
+  "author": "Kartik",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
