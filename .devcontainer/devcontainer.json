@@ -1,36 +1,25 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node
 {
-	"name": "Node.js",
-	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/javascript-node:4-24-trixie",
-	"features": {
-		"ghcr.io/nikiforovall/devcontainer-features/dotnet-csharpier:1": {},
-		"ghcr.io/dotnet/aspire-devcontainer-feature/dotnetaspire:1": {
-			"version": "latest daily"
-		},
-		"ghcr.io/devcontainer-config/features/dot-config:4": {},
-		"ghcr.io/postfinance/devcontainer-features/dotnet:1": {
-			"version": "lts",
-			"additionalVersions": "8.0,9.0",
-			"dotnetRuntimeVersions": "8.0.15",
-			"aspNetCoreRuntimeVersions": "8.0.15",
-			"workloads": "wasm-tools"
-		}
-	}
+  "name": "Node.js & MERN Backend",
+  // Uses the stable, official long-term support image for Node 20 or 22
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
 
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
+  "features": {
+    // Keeps your shell configurations cleaner if needed, otherwise this can be empty
+    "ghcr.io/devcontainer-config/features/dot-config:4": {}
+  },
 
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+  // Automatically forwards your Express/Node port (e.g., 5000 or 8000) when the server runs
+  "forwardPorts": [5000],
 
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "yarn install",
+  // Automatically runs npm install once the container is built so you don't have to
+  "postCreateCommand": "npm install",
 
-	// Configure tool-specific properties.
-	// "customizations": {},
+  // Customizes VS Code settings inside the Codespace container
+  "customizations": {
+    "vscode": {
+      "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"]
+    }
+  },
 
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
+  "remoteUser": "node"
 }

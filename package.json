@@ -2,22 +2,29 @@
   "name": "backend-api",
   "version": "1.0.0",
   "description": "Best server on the world",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
   "keywords": [
     "Kartik"
   ],
-  "homepage": "https://github.com/ItsKartik12/backend-api#readme",
-  "bugs": {
-    "url": "https://github.com/ItsKartik12/backend-api/issues"
-  },
+  "author": "Kartik",
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ItsKartik12/backend-api.git"
   },
-  "license": "ISC",
-  "author": "Kartik",
-  "type": "commonjs",
-  "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
+  "bugs": {
+    "url": "https://github.com/ItsKartik12/backend-api/issues"
+  },
+  "homepage": "https://github.com/ItsKartik12/backend-api#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
   }
 }
