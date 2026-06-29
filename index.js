@@ -10,6 +10,9 @@ app.get('/', (req, res) => {
 app.get('/twitter', (req, res) => {
     res.send('https://x.com/Kartik0192421')
 })
+app.get('/login', (req, res) => {
+    res.send('<h1>Please login the account before login');
+})
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
 })
