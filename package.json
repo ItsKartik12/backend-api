@@ -1,0 +1,21 @@
+{
+  "name": "backend-api",
+  "version": "1.0.0",
+  "description": "A robust, optimized, and secure RESTful backend API built with Node.js. Designed following clean architecture principles, normalized database structures, and modern security patterns.",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItsKartik12/backend-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ItsKartik12/backend-api/issues"
+  },
+  "homepage": "https://github.com/ItsKartik12/backend-api#readme"
+}
