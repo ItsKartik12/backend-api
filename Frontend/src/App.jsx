@@ -7,7 +7,7 @@ function App() {
   const [error, setError] = useState(null);
   const [activeCategory, setActiveCategory] = useState("All");
   useEffect(() => {
-    axios.get('http://localhost:3000/api/jokes')
+    axios.get('/api/jokes')
     .then((response) => {
       setJokes(response.data)
 
