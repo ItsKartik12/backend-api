@@ -5,7 +5,7 @@ const port = process.env.PORT || 3000;
 
 // Middleware to parse JSON payloads
 app.use(express.json());
-
+app.use(express.static('dist'));
 // Base Route
 app.get('/', (req, res) => {
     res.send('Server is ready');
