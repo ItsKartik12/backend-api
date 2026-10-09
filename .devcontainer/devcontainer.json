@@ -5,7 +5,7 @@
 
   "features": {
     // Keeps your shell configurations cleaner if needed, otherwise this can be empty
-    "ghcr.io/devcontainer-config/features/dot-config:4": {}
+    "ghcr.io/devcontainer-config/features/dot-config:5": {}
   },
 
   // Automatically forwards your Express/Node port (e.g., 5000 or 8000) when the server runs
